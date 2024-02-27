@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nmap Scan App</title>
+</head>
+<body>
+    <h1>Nmap Scan App</h1>
+
+    <form action="{{ url_for('scan') }}" method="post">
+        <label for="ip">Target IP:</label>
+        <input type="text" id="ip" name="ip" required>
+
+        <label for="email">Enter Your Email to Download PDF:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Scan</button>
+    </form>
+</body>
+</html>

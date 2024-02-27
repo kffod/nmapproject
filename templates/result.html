@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nmap Scan Result</title>
+</head>
+<body>
+    <h1>Nmap Scan Result</h1>
+
+    <p>Scan Result:</p>
+    <pre>{{ scan_result }}</pre>
+
+    <a href="{{ url_for('download_data', result_id=result_id) }}" download>Download Scan Data</a>
+
+    <p>Download PDF Report: <a href="{{ pdf_filename }}" download>Download PDF</a></p>
+</body>
+</html>
